@@ -87,7 +87,7 @@ func TestEvaluationLogToOSCALAssessmentResults_ResultMapping(t *testing.T) {
 		{gemara.Unknown, "not-satisfied", "unknown", "unknown maps to not-satisfied with reason"},
 		{gemara.NotApplicable, "not-satisfied", "not-applicable", "not-applicable maps to not-satisfied with reason"},
 		{gemara.NotRun, "not-satisfied", "not-run", "not-run maps to not-satisfied with reason"},
-		{gemara.Result(99), "not-satisfied", "other", "unrecognized result maps to not-satisfied with other"},
+		{gemara.Result(99), "not-satisfied", "invalid", "unrecognized result maps to not-satisfied with invalid"},
 	}
 
 	for _, tt := range tests {
